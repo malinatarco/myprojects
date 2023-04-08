@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style7.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Split Landing Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="split left">
+                <div class="overlay">
+                <h1>Viktor&Rolf</h1>
+                <a href="#" class="btn">Buy Now</a>
+            </div>
+        </div>  <!-- End class 'split' -->
+
+
+            <div class="split right">
+                <div class="overlay" style="background-color:rgba(103, 72, 70, 0.5)">
+            <h1>Dolce&Gabanna</h1>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+            </div><!-- End class 'split' -->
+        </div>
+
+
+    <script src="script7.js"></script>
+    </body>
+</html>

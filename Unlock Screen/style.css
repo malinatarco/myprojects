@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Mulish&display=swap');
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Mulish';
+    display:flex;
+    align-items:center;  
+    flex-direction:column;
+    height:100vh;
+    overflow:hidden;
+    margin:0;
+    background-color: black;
+}
+
+.output{
+    color: white;
+    text-align:center;
+    font-size: 50px;
+    margin-bottom:-20px;
+    height: 60px;
+}
+
+.container{
+    width: 60vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:80vh;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+}
+
+.element{
+    background-color: rgba(255,255,255,0.1);
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:10px;
+    color: white;
+    font-size:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    cursor:pointer;
+}
+
+.special{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:10px;
+    color: white;
+    font-size:25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    cursor:pointer;
+    background-color: rgba(255,255,255,0.3);
+    transition: 0.2s ease;
+}
+
+.special:active{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.element .circle {
+    position:absolute;
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background-color: white;
+    transform: scale(0);
+    animation: scale 0.3s ease-out;
+}
+
+@keyframes scale{
+    to{
+        transform: scale(1);
+        opacity:0;
+    }
+}
